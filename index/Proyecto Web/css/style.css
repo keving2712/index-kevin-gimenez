@@ -1,0 +1,229 @@
+body {
+  background: radial-gradient(circle, rgb(146, 49, 49), rgb(216, 158, 119));
+}
+
+.imagenSanta {
+  background-color: beige;
+  position: relative;
+}
+/** INICIO DE NAV BAR**/
+.navBar {
+  list-style: none;
+  padding: 45px;
+  margin: auto;
+  width: 100%;
+  background-color: rgb(233, 212, 204);
+}
+
+.barraNav {
+  display: inline-block;
+  text-align: center;
+  padding: 0px 10px;
+}
+.imagenSanta1 {
+  position: fixed;
+}
+
+/*caja imagenes con flex*/
+.titulo {
+  color: rgb(7, 7, 7);
+  text-align: center;
+}
+
+.cajaImagenes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  animation-name: animar;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: none;
+}
+
+@keyframes animar {
+  0% {
+    background-color: aliceblue;
+  }
+  100% {
+    background-color: rgb(216, 158, 119);
+  }
+}
+
+.images {
+  margin: 5px;
+  padding: 2px;
+  border: 3px solid chocolate;
+  border-radius: 5px;
+  flex: 1 1 1;
+}
+
+/*NUESTRA CASA, con flex*/
+.nuestraCasa {
+  border: 4px solid chocolate;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tituloCasa {
+  margin: 10px 10px;
+
+  text-align: center;
+  text-decoration: underline chocolate;
+  color: chocolate;
+}
+
+.videoSanta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/*inicio nuestra historia*/
+.nuestraHistoria {
+  color: rgb(12, 12, 12);
+  text-align: center;
+  text-decoration: underline;
+}
+#parrafoFinal {
+  color: rgb(15, 15, 15);
+  text-align: center;
+  font-family: "Lobster", cursive;
+}
+
+/***INICIO DE PAGINA MENU***/
+.cartaComidas {
+  color: rgb(231, 231, 231);
+  text-align: center;
+  text-decoration: underline;
+}
+
+.parrafoMenu {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 30px;
+}
+
+.transformacionMenu {
+  transition: all 2s;
+}
+
+.listaMenu {
+  list-style: none;
+  width: 150px;
+  margin: 0px auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.menu-item:hover {
+  transform: scaleY(2.5);
+  transform: scaleX(1.5);
+}
+
+/**TABLA DE PRECIOS**/
+.precios {
+  color: brown;
+}
+table {
+  border: 5px solid chocolate;
+}
+.preciosMeses {
+  border: 2px solid rgb(255, 160, 91);
+}
+.preciosMontos {
+  border: 2px solid rgb(226, 178, 44);
+}
+.condicionesPrecios {
+  color: black;
+  text-decoration: underline;
+}
+/***INICIO DE PAGINA COMUNIDAD***/
+.tituloReseña {
+  color: chocolate;
+  text-decoration: underline;
+  font-family: cursive;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.parrafoReseña {
+  color: blanchedalmond;
+
+  text-align: center;
+  border: 4px solid chocolate;
+  border-radius: 5px;
+}
+
+.mensajeReseña {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: underline chocolate;
+}
+/***INICIO SOPORTE***/
+.tituloSoporte {
+  color: chocolate;
+  text-decoration: underline rgb(248, 176, 124);
+  text-align: center;
+}
+.formulario {
+  background-color: beige;
+  border: 3px solid brown;
+}
+
+/*practica grid*/
+
+.grid-container {
+  background-color: grey;
+  margin: 10px;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "aside main main"
+    "aside main main"
+    "footer footer footer";
+  grid-auto-rows: 1fr 1fr 1fr 1fr;
+  height: 100%;
+  border: 2px solid rgb(80, 71, 70);
+}
+
+.grid-item {
+  margin: 5px;
+  padding: 10pxpx;
+}
+
+.grid-header {
+  background-color: rgb(158, 158, 138);
+  grid-area: header;
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+
+.grid-main {
+  background-color: bisque;
+  grid-area: main;
+}
+
+.grid-aside {
+  background-color: blanchedalmond;
+  grid-area: aside;
+}
+
+.grid-footer {
+  background-color: rgb(0, 0, 0);
+  grid-area: footer;
+}
+/* INICIO DE FOOTER*/
+.footer {
+  background-color: black;
+}
+.copyRight {
+  color: white;
+  text-align: end;
+}
