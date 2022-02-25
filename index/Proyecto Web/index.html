@@ -1,76 +1,162 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <link rel="icon" href="imagenes/santarita.ico">
-    <link rel="stylesheet" href="css/style.css">
-    <enlace rel="preconectar" href="https://fonts.googleapis.com">
-        <enlace rel="preconectar" href="https://fonts.gstatic.com" crossorigin>
-        <enlace href="https: //fonts.googleapis.com/css2? family= Cedarville+Cursive & family= Baile+Script & familia = Langosta &family= Neonderthaw & family= The+Nautigal:wght@400;700 & display=swap" rel="stylesheet">
-    <title>Santa rita Bakery</title>
-    
-</head>
-<body>
-    <header class="imagenSanta">
-        <a href="index.html"><img class="imagenSanta1" src="Imagenes/baker.png" logo alt="santarita" height="100" width="100"></a>
-    <nav>
-    <ul>   
-        <div class="navBar">
-            <li class="barraNav"><a href="index.html">Inicio</a></li>
-            <li class="barraNav"><a href="externas/menu.html">Menu</a></li>
-            <li class="barraNav"><a href="externas/precios.html">Precios</a></li>
-            <li class="barraNav"><a href="externas/resenas.html">Reseñas</a></li>
-            <li class="barraNav"><a href="externas/cv.html">Trabaja con nosotros</a></li>
-            <li class="barraNav"><a href="externas/grid.html">Practica grid</a></li>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Bootstrap iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <title>Pagina Prueba</title>
+  </head>
+  <body class="bg-dark">
+       <!--Inicio de navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" >
+        <div class="container">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Menu</a>
+              </li>        
+              <li class="nav-item">
+                <a class="nav-link" href="#">Precios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Reseñas</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trabaja con nosotros</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+   <!--Inicio de carousel-->
+   <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 3"></button>
     </div>
-    </ul>
-    </nav>
-    </header>
-    <main>
-    <section>
-    <h1 class="titulo">Pasteleria Santa Rita</h1>
-    <div class="cajaImagenes">
-        <div class="images"><img src="imagenes/donas.jpg" alt="donas" height="150" width="150"></div>
-        <div class="images"><img src="imagenes/masitas.jpg" alt="masitas" height="150" width="150"></div>
-        <div class="images"><img src="imagenes/carne.jpg" alt="carne" height="150" width="150"></div>
-        <div class="images"><img src="imagenes/jamonqueso.jpg" alt="jamon queso" height="150" width="150"></div>
-</div>
-<br>
-<div class="nuestraCasa"></div>
-    <div>
-<h2 class="tituloCasa">Nuestras casa</h2>
-</div>
-<div class="videoSanta">
-    <video src="videos/bakery.mp4" controls="" height="300px" width="500px"></video><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam voluptates sapiente esse, animi culpa adipisci quas nemo? Assumenda dolorem minus aperiam incidunt deserunt exercitationem! Maiores!</p>
-</div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Imagenes/hamburguesa.png" class="d-block w-100" alt="hamburguesa">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/milkshakes.png" class="d-block w-100" alt="images">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/tabla.png" class="d-block w-100" alt="milkshakes">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/images.png" class="d-block w-100" alt="tabla">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/vegetales.png" class="d-block w-100" alt="vegetales">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--Inicio de cartas-->
+  <section>
+  <div class="p-3">
+    <div class="container px-10">
+        <div class="row gx-5">
+          <div class="col-md-6 p-2">
+           <div class="p-3 border bg-dark text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus tempora placeat vel ad ratione corrupti animi, recusandae modi, ut pariatur quidem quos! Sint beatae earum laboriosam illum numquam vero dolores velit tempore doloribus! Minima harum, rem nulla placeat non omnis temporibus quisquam et illum iusto veritatis quo delectus veniam!orem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusantium, saepe natus commodi atque provident dolorum consectetur non fugiat id, eius doloribus sunt. Corporis quasi consectetur iusto, volupt</div>
+          </div>
+          <div class="col-md-6 p-2">
+            <div class="p-3 border bg-dark"><img src="Imagenes/jamonqueso.jpg" alt="" class="w-100"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+  <div class="p-3">
+    <div class="container px-10">
+        <div class="row gx-5">
+          <div class="col-md-6">
+           <div class="p-3 border bg-dark text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam necessitatibus tempora placeat vel ad ratione corrupti animi, recusandae modi, ut pariatur quidem quos! Sint beatae earum laboriosam illum numquam vero dolores velit tempore doloribus! Minima harum, rem nulla placeat non omnis temporibus quisquam et illum iusto veritatis quo delectus veniam!orem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio accusantium, saepe natus commodi atque provident dolorum consectetur non fugiat id, eius doloribus sunt. Corporis quasi consectetur iusto, volupt</div>
+          </div>
+          <div class="col-md-6 p-2">
+            <div class="p-3 border bg-dark"><img src="Imagenes/masitas.jpg" alt="" class="w-100"></div>
+          </div>
+        </div>
+      </div>
+  </div>
+</section>
+  <!--Inicio de historia-->
+  <section>
+<div class="containter text-light p-3 row">
+    <h1 class="text-center">Nuesta historia</h1>
+    <p class="fst-italic text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error ullam est placeat repellendus neque corrupti cumque adipisci illum, odio necessitatibus. Blanditiis corrupti temporibus fugit illo! Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem adipisci fugiat obcaecati, nihil fuga mollitia, similique praesentium recusandae nisi ratione velit, repellat in nam commodi?
+    </p>
+    <video src="videos/bakery.mp4" class="w-100 "></video>
 </div>
 </section>
-</section  >
-<div>
-<h3 class="nuestraHistoria">Nuestra historia</h3>
-<p id="parrafoFinal">Hola, nosotros somos santa rita bakery, una panaderia y casa de comidas, creada desde casa
-    para llevar a tu plato lo mejor de nuestra historia.
-    Nuestros platos, postres y pasteleria estan hechos de manera artesanal y por nosotros.
-    Esperamos que tu paso por nuestra casa sea grato y que sientas que estas pasando un
-    momento unico a la hora de probar nuestras delicias.
-</p>
-<img src="imagen 1" alt="">   
-<img src="imagen 2" alt="">   
-<img src="imagen 3" alt="">   
-<img src="imagen 4" alt=""> 
-<img src="imagen 5" alt="">
-</div>
-</section>
-</main>
-</section>
-<footer class="footer">
-    <a href="mailto: keving1293@gmail.com"><img src="imagenes/email.png" alt="email" width="50px" height="50px"></a> 
-    <a target="_blank" href="https://web.whatsapp.com"><img src="imagenes/whatsaap.png" alt="whatsaap" width="50px" height="50px"></a>
-    <a target="_blank" href="https://www.instagram.com/"><img src="imagenes/instagram.png" alt="instagram" width="50px" height="50px"></a>
-   <p class="copyRight">©Copyright Kevin Gimenez</p>
+<!--Inicio de footer-->
+<footer class=" border bg-dark text-light p-3">
+    <div class="row align-items-end">
+        <div class="col m-2">
+          <a href="#"><i class="bi bi-facebook m-2"></i>Nuestro Facebook</a>
+        </div>
+        <div class="col m-2">
+         <a href="#"><i class="bi bi-whatsapp m-2"></i>Nuestro Whatsapp</a>
+        </div>
+        <div class="col m-2">
+         <a href="#"><i class="bi bi-instagram m-2"></i>Nuestro Instagram</a>
+        
+        </div>
+      </div>
+    </div>
+    </div>
+    <p class="text-end border">Kevin Gimenez</p>
 </footer>
-</section>
-<body>
+
+   
+
+   <!-- jsdelivr -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
 </html>
